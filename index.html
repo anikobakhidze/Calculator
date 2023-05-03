@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="calc-wrapper">
+      <div id="appearNums"></div>
+      <div class="row">
+        <button class="btn" id="one" onclick="variableFunc(one)">1</button>
+        <button class="btn" id="two" onclick="variableFunc(two)">2</button>
+        <button class="btn" id="three" onclick="variableFunc(three)">3</button>
+        <button class="operation" id="plus" onclick="variableFunc(plus)">
+          +
+        </button>
+      </div>
+      <div class="row">
+        <button class="btn" id="four" onclick="variableFunc(four)">4</button>
+        <button class="btn" id="five" onclick="variableFunc(five)">5</button>
+        <button class="btn" id="six" onclick="variableFunc(six)">6</button>
+        <button class="operation" id="minus" onclick="variableFunc(minus)">
+          -
+        </button>
+      </div>
+      <div class="row">
+        <button class="btn" id="seven" onclick="variableFunc(seven)">7</button>
+        <button class="btn" id="eight" onclick="variableFunc(eight)">8</button>
+        <button class="btn" id="nine" onclick="variableFunc(nine)">9</button>
+        <button class="operation" id="multi" onclick="variableFunc(multi)">
+          *
+        </button>
+      </div>
+      <div class="row">
+        <button class="btn" id="zero" onclick="variableFunc(zero)">0</button>
+        <button class="btn" id="dot" onclick="variableFunc(dot)">.</button>
+        <button class="btn" id="equal" onclick="equalityFunc()">=</button>
+        <button
+          class="operation"
+          id="division"
+          onclick="variableFunc(division)"
+        >
+          /
+        </button>
+      </div>
+      <button class="btn" id="delete" onclick="deleteFunc(calculation)">
+        CE
+      </button>
+      <button class="btn" id="clear" onclick="clearCalc()">clear</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
